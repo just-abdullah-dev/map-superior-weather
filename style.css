@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.image-row {
+  flex-wrap: wrap;
+}
+
+.image-row img {
+  width: calc(33.33% - 30px);
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .image-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .image-row img {
+    width: 45%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-row img {
+    width: 90%;
+  }
+}
